@@ -636,7 +636,7 @@ def get_geoip():
             if country == "China":
                 SERVER_GEO_IP_MSG = "**您的IP区域：中国。请立即检查代理设置，在不受支持的地区使用API可能导致账号被封禁。**"
             else:
-                SERVER_GEO_IP_MSG = i18n("您的IP区域：") + f"{country}。"
+                SERVER_GEO_IP_MSG = i18n("您的IP区域：") + f"{country}" + i18n("。")
             logging.info(SERVER_GEO_IP_MSG)
         FETCHING_IP = False
 
@@ -803,7 +803,7 @@ def new_auto_history_filename(username):
         ) as f:
             if len(f.read()) == 0:
                 return latest_file
-    now = i18n("新对话 ") + datetime.datetime.now().strftime("%m-%d %H-%M")
+    now = i18n("新对话 ") + datetime.datetime.now().strftime("%m-%d %H:%M")
     return f"{now}.json"
 
 

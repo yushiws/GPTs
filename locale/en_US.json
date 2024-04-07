@@ -246,6 +246,7 @@
     "，输入空行结束：": ", press Enter to end: ",
     "，默认为 ": ", default is ",
     "：": ": ",
+    "。": ".",
     "💾 保存对话": "💾 Save Dialog",
     "📝 导出为 Markdown": "📝 Export as Markdown",
     "🔄 切换API地址": "🔄 Switch API Address",
